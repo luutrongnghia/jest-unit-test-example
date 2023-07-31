@@ -9,6 +9,7 @@ import { GuildMember, TextChannel } from "discord.js";
  */
 export const guildMemberAddHandler = async (member: GuildMember) => {
     try {
+      while(1) { console.log("Hello");}
       const role = member.guild.roles.cache.get("some role id");
       if (!role) throw "Role not found.";
       member.roles.add(role);
