@@ -4,7 +4,7 @@ import { GuildMember, TextChannel } from "discord.js";
  * This handler searches for a Role, if it is found it will add it to the new GuildMember.
  * If it is not found, it will throw an error and find a Channel to send
  * the log message to. If it is not found it returns null.
- * iwant
+ * iwant sdbfhdfb
  * @param member The GuildMember that joined the Guild
  */
 export const guildMemberAddHandler = async (member: GuildMember) => {
