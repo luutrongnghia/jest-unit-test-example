@@ -1,4 +1,4 @@
-name: CI-GoodFeedback-[Alpha]
+name: CI-Jest-Test-Example
 
 on:
   push:
