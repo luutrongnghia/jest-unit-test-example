@@ -3,12 +3,14 @@ name: CI-Jest-Test-Example
 on:
   push:
     branches:
-      - '!main'
-  # pull_request:
-  #   types: [opened, synchronize, reopened]
-  #   branches:
-  #     - 'develop'
-  #     - 'feature/**'
+      - 'develop'
+      - 'main'
+      - 'feature/**'
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - 'develop'
+      - 'feature/**'
 jobs:
   sonarcloud:
       name: sonar-scan
@@ -18,7 +20,7 @@ jobs:
           with:
             fetch-depth: 0
         - name: Test and coverage
-          run: yarn test
+          run: yarn jest
         - name: SonarCloud Scan
           uses: SonarSource/sonarcloud-github-action@master
           env:
