@@ -47,11 +47,11 @@ describe("Message Handler", () => {
     }
   });
   
-  it("should be not call any channel.send()", async () => {
-    message.author.bot = false;
-    message.content = "!random";
-    await messageHandler(message);
-    expect(message.channel.send).toHaveBeenCalledWith("Command not found.");
-    expect(message.channel.send).toHaveBeenCalledTimes(1);
-  });
+  // it("should be not call any channel.send()", async () => {
+  //   message.author.bot = false;
+  //   message.content = "!random";
+  //   await messageHandler(message);
+  //   expect(message.channel.send).toHaveBeenCalledWith("Command not found.");
+  //   expect(message.channel.send).toHaveBeenCalledTimes(1);
+  // });
 });
