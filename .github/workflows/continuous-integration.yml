@@ -3,9 +3,7 @@ name: CI-Jest-Test-Example
 on:
   push:
     branches:
-      - 'develop'
-      - 'main'
-      - 'feature/**'
+      - '!main'
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
