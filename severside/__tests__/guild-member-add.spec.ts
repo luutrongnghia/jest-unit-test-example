@@ -2,10 +2,10 @@ import {
   getGuildMemberMock,
   getRoleMock,
   getTextChannelMock,
-} from "../__mocks__";
+} from "../../__mocks__";
 
 import { Role } from "discord.js";
-import { guildMemberAddHandler } from "../src/handlers/guild-member-add";
+import { guildMemberAddHandler } from "../../src/handlers/guild-member-add";
 
 /**
  * Creates a test closure.

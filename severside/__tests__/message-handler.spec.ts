@@ -1,5 +1,5 @@
 import { Message } from "discord.js";
-import { messageHandler } from "../src/handlers/message-handler";
+import { messageHandler } from "../../src/handlers/message-handler";
 
 /**
  * Creates a test closure.
