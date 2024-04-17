@@ -20,5 +20,6 @@ export const guildMemberAddHandler = async (member: GuildMember) => {
       channel.send("Role was not added to the member because it was not found");
 
       console.error(err);
+      
     }
   };
